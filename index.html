@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./libs/d3.js"></script>
-    <script src="libs/d3jstopojson.v1.js"></script>
+    <script src="./d3.js"></script>
+    <script src="./d3jstopojson.v1.js"></script>
     <title>MA map</title>
     <style>
         body {
@@ -78,8 +78,8 @@
         const svgWidth = (window_dims.width * 0.75);
         const svgHeight = (window_dims.width * 0.4);
 
-        const MA_counties = "./data/towns.topojson";
-        const gini_index = "./data/gini_index.csv";
+        const MA_counties = "./towns.topojson";
+        const gini_index = "./gini_index.csv";
 
         Promise.all([
             d3.json(MA_counties),
